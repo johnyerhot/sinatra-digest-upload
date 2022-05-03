@@ -2,7 +2,7 @@
 
 source :rubygems
 
-gem 'sinatra', :require => 'sinatra/base'
+gem 'sinatra', '>= 2.2.0', :require => 'sinatra/base'
 gem 'haml'
 gem 'rack', '>=1.3.0'
 
