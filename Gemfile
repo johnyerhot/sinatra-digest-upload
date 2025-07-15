@@ -2,7 +2,7 @@
 
 source :rubygems
 
-gem 'sinatra', :require => 'sinatra/base'
+gem 'sinatra', '>= 2.0.0', :require => 'sinatra/base'
 gem 'haml'
 gem 'rack', '>=1.3.0'
 
@@ -11,5 +11,5 @@ group :production do
 end
 
 group :development do
-  gem 'shotgun'
+  gem 'shotgun', '>= 0.9.1'
 end
