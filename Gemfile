@@ -2,14 +2,14 @@
 
 source :rubygems
 
-gem 'sinatra', :require => 'sinatra/base'
+gem 'sinatra', '>= 2.0.0', :require => 'sinatra/base'
 gem 'haml'
-gem 'rack', '>=1.3.0'
+gem 'rack', '>= 2.2.18'
 
 group :production do
-  gem 'unicorn', "~> 1.0.0"
+  gem 'unicorn', '~> 1.1.0'
 end
 
 group :development do
-  gem 'shotgun'
+  gem 'shotgun', '>= 0.9.1'
 end
